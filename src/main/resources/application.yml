@@ -1,0 +1,54 @@
+spring:
+  application:
+    name: statecollect_batch
+
+  main:
+    web-application-type: none
+
+database-original:
+  datasource:
+    jdbc-url: jdbc:mysql://localhost:3306/sakila
+    username: root
+    password: Krishna@17
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+database-siva:
+  datasource:
+    jdbc-url: jdbc:mysql://localhost:3306/database_siva
+    username: root
+    password: Krishna@17
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+database-country:
+  datasource:
+    jdbc-url: jdbc:mysql://localhost:3306/world
+    username: root
+    password: Krishna@17
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+database-company:
+  datasource:
+    jdbc-url: jdbc:mysql://localhost:3306/company
+    username: root
+    password: Krishna@17
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+report:
+  out: C:\war\report
+  input:
+    ready: C:\war\report\input\ready
+    work: C:\war\report\input\work
+    error: C:\war\report\input\error
+    done: C:\war\report\input\done
+
+  output:
+    work: C:\war\report\output\ready
+    done: C:\war\report\output\done
+    error: C:\war\report\output\ready
+    ready: C:\war\report\output\ready
+
+server:
+  port: 8080
+
