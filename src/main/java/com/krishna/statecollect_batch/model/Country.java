@@ -3,17 +3,17 @@ package com.krishna.statecollect_batch.model;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name = "Country")
 public class Country {
 
     @Id
     @Column(name = "Code")
     private String code;
-
     @Column(name = "Name")
     private String name;
-
     @Column(name = "Continent")
     private String continent;
     @Column(name = "Region")
