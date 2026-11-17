@@ -16,6 +16,7 @@ public class CountryLanguage {
     @Column(name = "Language")
     private String language;
 
+    @Column(name = "IsOfficial")
     private String isOfficial;
 
     private Double percentage;
