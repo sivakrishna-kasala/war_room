@@ -13,6 +13,7 @@ public class CountryLanguage {
     @Column(name = "CountryCode")
     private String countryCode;
 
+    @Column(name = "Language")
     private String language;
 
     private String isOfficial;
