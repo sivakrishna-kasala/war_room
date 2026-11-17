@@ -34,6 +34,8 @@ public class StatecollectBatchApplication {
 
 		TestSiva siva=context.getBean(TestSiva.class);
 
+		CountryJpaService countryJpa=context.getBean(CountryJpaService.class);
+
 		System.out.println(Arrays.toString(args));
 
 		if (args[0].equals( "COPY_ACTOR")){
@@ -54,6 +56,9 @@ public class StatecollectBatchApplication {
 			countryCityService.country(args);
 		} else if (args[0].equals( "TEST_SIVA")){
 			siva.test();
+		} else if (args[0].equals("COUNTRY_JPA")) {
+			countryJpa.country(args);
+
 		}
 
 	}
