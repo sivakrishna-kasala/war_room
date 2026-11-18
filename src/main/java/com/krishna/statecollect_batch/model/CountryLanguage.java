@@ -1,9 +1,6 @@
 package com.krishna.statecollect_batch.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "CountryLanguage")
@@ -19,7 +16,12 @@ public class CountryLanguage {
     @Column(name = "IsOfficial")
     private String isOfficial;
 
+    @Column(name = "Percentage")
     private Double percentage;
+
+    @ManyToOne
+    @JoinColumn(name = "CountryCode")
+    private Country country;
 
     public String getCountryCode() {
         return countryCode;

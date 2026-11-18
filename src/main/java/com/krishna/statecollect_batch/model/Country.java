@@ -1,9 +1,8 @@
 package com.krishna.statecollect_batch.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
+
+import java.util.List;
 
 @Entity
 @Table(name = "Country")
@@ -40,6 +39,9 @@ public class Country {
     private Integer capital;
     @Column(name = "Code2")
     private String code2;
+
+    @OneToMany(mappedBy = "country")
+    private List<CountryLanguage> countryLanguage;
 
     public Country() {
     }
