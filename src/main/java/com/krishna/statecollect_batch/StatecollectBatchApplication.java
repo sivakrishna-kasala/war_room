@@ -36,6 +36,8 @@ public class StatecollectBatchApplication {
 
 		CountryJpaService countryJpa=context.getBean(CountryJpaService.class);
 
+		CountriesLanguagesInsertService insertService=context.getBean(CountriesLanguagesInsertService.class);
+
 		System.out.println(Arrays.toString(args));
 
 		if (args[0].equals( "COPY_ACTOR")){
@@ -58,8 +60,10 @@ public class StatecollectBatchApplication {
 			siva.test();
 		} else if (args[0].equals("COUNTRY_JPA")) {
 			countryJpa.country(args);
-
+		} else if (args[0].equals("LANGUAGE_INSERT")) {
+			insertService.insert();
 		}
+
 
 	}
 

@@ -1,20 +1,18 @@
 package com.krishna.statecollect_batch.entity;
 
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "CountriesLanguages")
 public class CountriesLanguages {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "country_language_id")
     private Integer countryLanguageId;
 
-    @Column(name = "country_code")
+    @Column(name = "country_language_code")
     private String countryCode;
 
     @Column(name = "language")
