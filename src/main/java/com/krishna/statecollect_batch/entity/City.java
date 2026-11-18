@@ -1,4 +1,4 @@
-package com.krishna.statecollect_batch.model;
+package com.krishna.statecollect_batch.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

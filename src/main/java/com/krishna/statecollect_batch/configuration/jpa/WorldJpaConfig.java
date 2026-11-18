@@ -26,7 +26,7 @@ import javax.sql.DataSource;
 public class WorldJpaConfig {
 
     @Bean("jpaDataSource")
-    @ConfigurationProperties(prefix = "database-company.datasource")
+    @ConfigurationProperties(prefix = "database-country.datasource")
     public DataSource jpaDataSource() {
         return DataSourceBuilder.create().build();
     }

@@ -30,7 +30,8 @@ database-country:
 
 database-company:
   datasource:
-    jdbc-url: jdbc:mysql://localhost:3306/company
+    jdbc-url: jdbc:mysql://localhost:3306/world
+#    jdbc-url: jdbc:mysql://localhost:3306/company
     username: root
     password: Krishna@17
     driver-class-name: com.mysql.cj.jdbc.Driver

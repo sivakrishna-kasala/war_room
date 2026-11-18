@@ -1,4 +1,4 @@
-package com.krishna.statecollect_batch.model;
+package com.krishna.statecollect_batch.entity;
 
 import jakarta.persistence.*;
 
@@ -19,9 +19,9 @@ public class CountryLanguage {
     @Column(name = "Percentage")
     private Double percentage;
 
-    @ManyToOne
-    @JoinColumn(name = "CountryCode")
-    private Country country;
+//    @ManyToOne
+//    @JoinColumn(name = "CountryCode")
+//    private Country country;
 
     public String getCountryCode() {
         return countryCode;

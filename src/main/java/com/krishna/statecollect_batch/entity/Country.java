@@ -1,4 +1,4 @@
-package com.krishna.statecollect_batch.model;
+package com.krishna.statecollect_batch.entity;
 
 import jakarta.persistence.*;
 
@@ -40,8 +40,8 @@ public class Country {
     @Column(name = "Code2")
     private String code2;
 
-    @OneToMany(mappedBy = "country")
-    private List<CountryLanguage> countryLanguage;
+   // @OneToMany(mappedBy = "country")
+    //private List<CountryLanguage> countryLanguage;
 
     public Country() {
     }
